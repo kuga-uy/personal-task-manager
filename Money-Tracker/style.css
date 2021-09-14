@@ -1,0 +1,124 @@
+/*variables*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mt__body {
+  margin: 0;
+  padding: 0;
+  font-family: "";
+  background-color: #008844;
+  position: relative;
+}
+
+.mt__body .mt__navbar {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #006633;
+}
+
+.mt__body .mt__navbar .mt__title {
+  color: #fff;
+  margin-left: 15px;
+}
+
+.grid__split-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arial, helvetica, sans-serif;
+}
+
+.grid__split-container .mt__options {
+  width: 200px;
+  background-color: #006633;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.grid__split-container .mt__options .mt__option-input {
+  width: 80%;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.grid__split-container .mt__options label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.grid__split-container .mt__options .saveing__container, .grid__split-container .mt__options .income__container,
+.grid__split-container .mt__options .expenses__container {
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.grid__split-container .mt__options .saveing__container .mt_button, .grid__split-container .mt__options .income__container .mt_button,
+.grid__split-container .mt__options .expenses__container .mt_button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0033ff;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.grid__split-container .mt__options .saveing__container .mt_button:hover, .grid__split-container .mt__options .income__container .mt_button:hover,
+.grid__split-container .mt__options .expenses__container .mt_button:hover {
+  background-color: #0099ff;
+}
+
+.grid__split-container .data-visualization {
+  width: 70%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mt__body">
+    <nav class="mt__navbar">
+        <h1 class="mt__title">Money Tracker</h1>
+    </nav>
+    <section class="grid__split-container">
+        <aside class="mt__options">
+            <form class="saveing__container">
+                <label for="saveing__date" id="saveing_label">Saveing Date</label>
+                <input class="mt__option-input" type="date" id="saveing__date">
+                <label for="saveing__description" id="saveing__label">Saveing Description</label>
+                <input class="mt__option-input" type="text" id="saveing__description">
+                <label for="saveing__amount" id="saveing__label">Saveing Amount</label>
+                <input class="mt__option-input" type="number" id="saveing__amount">
+                <label for="saveing__type" id="saveing__label">Saveing Type</label>
+                <select class="mt__option-input" type="select" id="saveing__type">
+                    <option id="emergency-fund" value="emergency-fund">Emergency Fund</option>
+                    <option id="Investment" value="Investment">Investment</option>
+                    <option id="other-save" value="other-save">Other Save</option>
+                </select>  
+                <button class="mt_button" id="saveing-button" type="button">Add Saveing</button>  
+            </form> 
+
+            <form class="income__container">
+                <label for="income__date" id="income_label">Income Date</label>
+                <input class="mt__option-input" type="date" id="income__date">
+                <label for="income__description" id="income__label">Income Description</label>
+                <input class="mt__option-input" type="text" id="income__description">
+                <label for="income__amount" id="income__label">Income Amount</label>
+                <input class="mt__option-input" type="number" id="income__amount">
+                <button class="mt_button" id="income-button" type="button">Add Income</button>
+            </form> 
+            
+            <form class="expenses__container">
+                <label for="expenses__date" id="expenses_label">Expenses Date</label>
+                <input class="mt__option-input" type="date" id="expenses__date">
+                <label for="expenses__description" id="expenses__label">Expenses Description</label>
+                <input class="mt__option-input" type="text" id="expenses__description">
+                <label for="expenses__amount" id="expenses__label"> Expenses Amount</label>
+                <input class="mt__option-input" type="number" id="expenses__amount">
+                <label for="expenses__type" id="expenses__label">Expenses Type</label>
+                <select class="mt__option-input" type="select" id="expenses__type">
+                    <option id="food" value="food">Food</option>
+                    <option id="clothing" value="clothing">Clothing</option>
+                    <option id="entertainment" value="entertainment">Entertainment</option>
+                    <option id="car" value="car">Car</option>
+                    <option id="traveling" value="traveling">Traveling</option>
+                    <option id="hobbie" value="hobbie">hobbie</option>
+                    <option id="other-expenses" value="other-expenses">Other expenses</option>
+                </select>
+                <button class="mt_button" id="expenses-button" type="button">Add Expenses</button>
+            </form> 
+        </aside>
+
+        <aside class="data-visualization">
+
+        </aside>
+    </section>
+    
+</body>
+</html>
