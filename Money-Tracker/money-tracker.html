@@ -23,23 +23,17 @@
     </nav>
     <section class="grid__split-container">
         <aside class="mt__options">
-            <form class="saveing__container">
+            <form class="saveing__form">
                 <label for="saveing__date" id="saveing_label">Saveing Date</label>
                 <input class="mt__option-input" type="date" id="saveing__date">
                 <label for="saveing__description" id="saveing__label">Saveing Description</label>
                 <input class="mt__option-input" type="text" id="saveing__description">
                 <label for="saveing__amount" id="saveing__label">Saveing Amount</label>
                 <input class="mt__option-input" type="number" id="saveing__amount">
-                <label for="saveing__type" id="saveing__label">Saveing Type</label>
-                <select class="mt__option-input" type="select" id="saveing__type">
-                    <option id="emergency-fund" value="emergency-fund">Emergency Fund</option>
-                    <option id="Investment" value="Investment">Investment</option>
-                    <option id="other-save" value="other-save">Other Save</option>
-                </select>  
                 <button class="mt_button" id="saveing-button" type="button">Add Saveing</button>  
             </form> 
 
-            <form class="income__container">
+            <form class="income__form">
                 <label for="income__date" id="income_label">Income Date</label>
                 <input class="mt__option-input" type="date" id="income__date">
                 <label for="income__description" id="income__label">Income Description</label>
@@ -49,23 +43,13 @@
                 <button class="mt_button" id="income-button" type="button">Add Income</button>
             </form> 
             
-            <form class="expenses__container">
+            <form class="expenses__form">
                 <label for="expenses__date" id="expenses_label">Expenses Date</label>
                 <input class="mt__option-input" type="date" id="expenses__date">
                 <label for="expenses__description" id="expenses__label">Expenses Description</label>
                 <input class="mt__option-input" type="text" id="expenses__description">
                 <label for="expenses__amount" id="expenses__label"> Expenses Amount</label>
                 <input class="mt__option-input" type="number" id="expenses__amount">
-                <label for="expenses__type" id="expenses__label">Expenses Type</label>
-                <select class="mt__option-input" type="select" id="expenses__type">
-                    <option id="food" value="food">Food</option>
-                    <option id="clothing" value="clothing">Clothing</option>
-                    <option id="entertainment" value="entertainment">Entertainment</option>
-                    <option id="car" value="car">Car</option>
-                    <option id="traveling" value="traveling">Traveling</option>
-                    <option id="hobbie" value="hobbie">hobbie</option>
-                    <option id="other-expenses" value="other-expenses">Other expenses</option>
-                </select>
                 <button class="mt_button" id="expenses-button" type="button">Add Expenses</button>
             </form> 
         </aside>
@@ -89,11 +73,112 @@
                     <h2 class="balance__visualization">$0</h2>
                 </div>
             </div>
-            <div class="dv__resume">
+            <section class="dv__resume-table-container">
+                <div class="dv__wrapper">
+                    <div class="dv__saveing-table">
+                        <h3>Saveings Data</h3>
+                        <ul class="title__container"> 
+                            <li class="saveings__date">
+                                <h4>Date</h4>
+                            </li>
+                            <li class="saveings__description">
+                                <h4>Description</h4>
+                            </li>
+                            <li class="saveings__amount">
+                                <h4>Amount</h4>
+                            </li>    
+                        </ul> 
+                        <div class="saveing__list-container">
+                            <div class="saveing">
+                                    <div class="saveing__item">
+                                        <h5 class="saveing-item__date">date</h6>
+                                        <h5 class="saveing-item__description">- description</h6>
+                                        <h5 class="saveing-item__amount">amount</h5>
+    
+                                        <div class="icons">
+                                            <a href="#" class="edit-icon" data-id="${expense.id}">
+                                                <i class='bx bxs-edit' ></i>
+                                            </a>
+                                            <a href="#" class="delete-icon" data-id="${expense.id}">
+                                                <i class='bx bxs-trash'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> 
+                        </div>
+                    </div>
 
-            </div>
+                    <div class="dv__income-table">
+                        <h3>Income Data</h3>
+                        <ul class="title__container">
+                            <li class="income__date">
+                                <h4>Date</h4>
+                            </li>
+                            <li class="income__description">
+                                <h4>Description</h4>
+                            </li>
+                            <li class="income__amount">
+                                <h4>Amount</h4>
+                            </li>   
+                        </ul>
+                        <div class="income__list-container">
+                            <!-- <div class="income">
+                                    <div class="income__item">
+                                        <h5 class="income-item__date">date</h6>
+                                        <h5 class="income-item__description">- description</h6>
+                                        <h5 class="income-item__amount">amount</h5>
+    
+                                        <div class="icons">
+                                            <a href="#" class="edit-icon" data-id="${expense.id}">
+                                                <i class='bx bxs-edit' ></i>
+                                            </a>
+                                            <a href="#" class="delete-icon" data-id="${expense.id}">
+                                                <i class='bx bxs-trash'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        </div>
+                    </div>
+                   
+                    <div class="dv__expenses-table">
+                        <h3>Expenses Data</h3>
+                        <ul class="title__container">
+                            <li class="expenses__date">
+                                <h4>Date</h4>
+                            </li>
+                            <li class="expenses__description">
+                                <h4>Description</h4>
+                            </li>
+                            <li class="expenses__amount">
+                                <h4>Amount</h4>
+                            </li>     
+                        </ul>
+                        <div class="expenses__list-container">
+                        <!-- <div class="expense">
+                                <div class="expense__item">
+                                    <h5 class="expense-item__date">date</h6>
+                                    <h5 class="expense-item__description">- description</h6>
+                                    <h5 class="expense-item__amount">amount</h5>
+
+                                    <div class="icons">
+                                        <a href="#" class="edit-icon" data-id="${expense.id}">
+                                            <i class='bx bxs-edit' ></i>
+                                        </a>
+                                        <a href="#" class="delete-icon" data-id="${expense.id}">
+                                            <i class='bx bxs-trash'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <button  class="save__file-btn">Save File</button>
         </aside>
     </section>
-    
+    <script type="text/javasript" src="money-tracker.js"></script>
 </body>
 </html>

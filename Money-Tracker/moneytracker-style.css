@@ -88,7 +88,7 @@ button {
 }
 
 .grid__split-container .mt__options {
-  width: 200px;
+  width: 300px;
   background-color: #006633;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,8 +118,8 @@ button {
   margin-top: 10px;
 }
 
-.grid__split-container .mt__options .saveing__container, .grid__split-container .mt__options .income__container,
-.grid__split-container .mt__options .expenses__container {
+.grid__split-container .mt__options .saveing__form, .grid__split-container .mt__options .income__form,
+.grid__split-container .mt__options .expenses__form {
   border: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,8 +136,8 @@ button {
   font-size: 14px;
 }
 
-.grid__split-container .mt__options .saveing__container .mt_button, .grid__split-container .mt__options .income__container .mt_button,
-.grid__split-container .mt__options .expenses__container .mt_button {
+.grid__split-container .mt__options .saveing__form .mt_button, .grid__split-container .mt__options .income__form .mt_button,
+.grid__split-container .mt__options .expenses__form .mt_button {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #0033ff;
@@ -147,8 +147,8 @@ button {
   border-radius: 8px;
 }
 
-.grid__split-container .mt__options .saveing__container .mt_button:hover, .grid__split-container .mt__options .income__container .mt_button:hover,
-.grid__split-container .mt__options .expenses__container .mt_button:hover {
+.grid__split-container .mt__options .saveing__form .mt_button:hover, .grid__split-container .mt__options .income__form .mt_button:hover,
+.grid__split-container .mt__options .expenses__form .mt_button:hover {
   background-color: #0099ff;
 }
 
@@ -216,7 +216,17 @@ button {
   color: #fff;
 }
 
-.grid__split-container .data-visualization .dv__resume {
+.grid__split-container .data-visualization .dv__resume-table-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  width: 95%;
+  height: 400px;
+}
+
+.grid__split-container .data-visualization .dv__resume-table-container .dv__saveing-table, .grid__split-container .data-visualization .dv__resume-table-container .dv__expenses-table,
+.grid__split-container .data-visualization .dv__resume-table-container .dv__income-table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,8 +234,81 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
-  width: 80%;
-  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #008844;
+}
+
+.grid__split-container .data-visualization .dv__resume-table-container .dv__saveing-table, .grid__split-container .data-visualization .dv__resume-table-container .dv__expenses-table {
+  width: 35%;
+}
+
+.grid__split-container .data-visualization .dv__resume-table-container .dv__income-table {
+  width: 30%;
+}
+
+.title__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding-right: 50px;
+}
+
+.income__list-container, .saveing__list-container,
+.expenses__list-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+}
+
+.income__list-container .saveing__item, .income__list-container .expense__item, .income__list-container .income__item, .saveing__list-container .saveing__item, .saveing__list-container .expense__item, .saveing__list-container .income__item,
+.expenses__list-container .saveing__item,
+.expenses__list-container .expense__item,
+.expenses__list-container .income__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dv__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.save__file-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0033ff;
+  color: #fff;
+  width: 150px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.save__file-btn:hover {
+  background-color: #0099ff;
 }
 /*# sourceMappingURL=moneytracker-style.css.map */
